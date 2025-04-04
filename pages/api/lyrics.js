@@ -1,4 +1,8 @@
 export default async function handler(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Or set your domain instead of '*'
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    
     const { artist, title } = req.query;
   
     if (!artist || !title) {
