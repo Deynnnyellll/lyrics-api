@@ -116,4 +116,6 @@ function applyUtilityClasses(el) {
     });
 }
 
+console.log("Hello, World!)
+
 // document.querySelectorAll('[class*="-["]').forEach(applyUtilityClasses); 
